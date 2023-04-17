@@ -38,16 +38,18 @@ def create_db():
 
 
 def get_data(city):
-    def fetch(ti):
-        url = "https://api.openweathermap.org/data/3.0/onecall"
+    def fetch(ti, **kwargs):
+        execution_date = kwargs['execution_date']
+        url = "https://api.openweathermap.org/data/3.0/onecall/timemachine"
         [lat, lon] = Geocoder().get_lat_lon(city)
-        params = {"lat": lat, "lon": lon, "appid": Variable.get("WEATHER_API_KEY")}
+        params = {"lat": lat, "lon": lon, "appid": Variable.get("WEATHER_API_KEY"), "dt": int(execution_date.timestamp())}
         response = requests.get(url, params).json()
-        ti.xcom_push("processed_at", response["current"]["dt"])
-        ti.xcom_push("humidity", response["current"]["humidity"])
-        ti.xcom_push("cloudiness", response["current"]["clouds"])
-        ti.xcom_push("wind_speed", response["current"]["wind_speed"])
-        ti.xcom_push("temperature", response["current"]["temp"])
+        data = response["data"][0]
+        ti.xcom_push("processed_at", data["dt"])
+        ti.xcom_push("humidity", data["humidity"])
+        ti.xcom_push("cloudiness", data["clouds"])
+        ti.xcom_push("wind_speed", data["wind_speed"])
+        ti.xcom_push("temperature", data["temp"])
     return PythonOperator(
         task_id=f"get_data_for_{city}",
         python_callable=fetch
