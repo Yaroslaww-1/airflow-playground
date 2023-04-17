@@ -1,0 +1,55 @@
+<mxfile host="Electron" modified="2023-04-17T19:27:25.946Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="K3fJh3rVfw3n_yhI5fTX" version="21.1.2" type="device">
+  <diagram name="Page-1" id="9KoFobgs3FCKHEY04tj-">
+    <mxGraphModel dx="2117" dy="592" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mK-sKvdbwRoop66nwL6E-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mK-sKvdbwRoop66nwL6E-1" target="mK-sKvdbwRoop66nwL6E-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-1" value="Listings extraction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-6" value="Parsed pages cache + parsing queue" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="310" y="445" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mK-sKvdbwRoop66nwL6E-8" target="mK-sKvdbwRoop66nwL6E-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mK-sKvdbwRoop66nwL6E-8" target="mK-sKvdbwRoop66nwL6E-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-8" value="Transform listing&lt;br&gt;(generate static title/snippet/...)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mK-sKvdbwRoop66nwL6E-10" target="mK-sKvdbwRoop66nwL6E-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-10" value="Region extraction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-383" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mK-sKvdbwRoop66nwL6E-11" target="mK-sKvdbwRoop66nwL6E-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-11" value="Communities extraction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-119" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-14" value="Data Warehouse" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="640" y="445" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mK-sKvdbwRoop66nwL6E-16" target="mK-sKvdbwRoop66nwL6E-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-16" value="Regions.json" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="-227" y="448" width="76" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mK-sKvdbwRoop66nwL6E-17" target="mK-sKvdbwRoop66nwL6E-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK-sKvdbwRoop66nwL6E-17" value="Communities&lt;br&gt;.json" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="41" y="448" width="76" height="84" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
